@@ -111,6 +111,7 @@ namespace Lab4
             singer.SubscriptionCost = f.numericUpDown1.Value;
             singer.Description = f.textBox2.Text;
             singersService.CreateSinger(singer);
+            //singersService.CreateSinger(singers);
             AllSingers = singersService.GetAllSingers();
             bindingSourceSingers.DataSource = AllSingers;
             MessageBox.Show("Новый исполнитель добавлен");
