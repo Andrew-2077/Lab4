@@ -100,10 +100,6 @@ namespace Lab4
             {
                 return;
             }
-            //if (result == DialogResult.Cancel)
-            //{
-            //    return;
-            //}
 
             SingersDto singer = new SingersDto();
             singer.Label_ID = (int)f.comboBox1.SelectedValue;
