@@ -100,6 +100,10 @@ namespace Lab4
             {
                 return;
             }
+            //if (result == DialogResult.Cancel)
+            //{
+            //    return;
+            //}
 
             SingersDto singer = new SingersDto();
             singer.Label_ID = (int)f.comboBox1.SelectedValue;
@@ -110,6 +114,7 @@ namespace Lab4
             AllSingers = singersService.GetAllSingers();
             bindingSourceSingers.DataSource = AllSingers;
             MessageBox.Show("Новый исполнитель добавлен");
+            //MessageBox.Show("Новый исполнитель добавлен");
         }
 
         private int getSelectedRow(DataGridView dataGridView)
